@@ -1,6 +1,7 @@
 version: '2.1'
 services:
   API:
+    build: .
     image: 'student_schedule.jar'
     ports:
       - "8080:8080"

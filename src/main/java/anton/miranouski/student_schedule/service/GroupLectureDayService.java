@@ -28,6 +28,12 @@ public class GroupLectureDayService {
         }
     }
 
+
+    /**
+     * Save with a check for the uniqueness of the combination of date and study group
+     *
+     * @param groupLectureDay the group lecture day for save
+     */
     public void save(GroupLectureDay groupLectureDay) {
         if (!lectureDayRepository.existsByDateAndStudyGroup(
                 groupLectureDay.getDate(), groupLectureDay.getStudyGroup()

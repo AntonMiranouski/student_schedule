@@ -8,8 +8,6 @@ import anton.miranouski.student_schedule.repository.GroupLectureDayRepository;
 import anton.miranouski.student_schedule.repository.LectureRepository;
 import anton.miranouski.student_schedule.repository.StudentRepository;
 import anton.miranouski.student_schedule.repository.StudyGroupRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -21,8 +19,6 @@ import java.util.Random;
 
 @Component
 public class PopulateDatabase {
-
-    //private static final Logger LOGGER = LoggerFactory.getLogger(PopulateDatabase.class);
 
     private final GroupLectureDayRepository lectureDayRepository;
     private final StudyGroupRepository studyGroupRepository;
